@@ -1,0 +1,29 @@
+.edit-input {
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20%;
+    background-color: #055565;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 6px #0000003b;
+}
+
+.edit-input textarea {
+    padding: 20px;
+    width: 90%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #106879;
+    background-color: #055565;
+    outline: none;
+    color: #08869e;
+}
+
+.btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

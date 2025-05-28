@@ -1,0 +1,186 @@
+.btn-group {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-group button {
+    position: relative;
+    background-color: #056679;
+    border: none;
+    cursor: pointer;
+    color: #08869e;
+    padding: 9px 10px 8px 9px;
+    border-radius: 10px;
+}
+
+.btn-group button:hover {
+    border: 1px solid #08869e;
+    transition: 0.3s all ease-in-out;
+}
+
+.icon:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #08869e;
+    color: #044b59;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 125%;
+    /* above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    /* bottom of tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #08869e transparent transparent transparent;
+}
+
+.hide-show {
+    background-color: #055565;
+    border: 1px solid #08869e;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.toggle {
+    margin-left: 40%;
+    margin-bottom: 5px;
+    padding: 10px 25px 10px 25px;
+    background-color: #056679;
+    color: #08869e;
+    border: 0;
+    border-radius: 10px;
+}
+
+.toggle:hover {
+    border: 1px solid #08869e;
+}
+
+ul {
+    font-family: Arial Black;
+    text-align: left;
+    padding: 0;
+}
+
+.todo-list {
+    background-color: #055565;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #08869e;
+    box-shadow: 0 4px 6px #00000066;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-height: 80px;
+    list-style: none;
+    word-break: break-word;
+    border: 1px solid #08869e;
+    border-radius: 10px;
+    word-break: break-word;
+    padding: 15px;
+    overflow: hidden;
+}
+
+ul li span {
+    flex: 1;
+    display: block;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #056679;
+    border: 1px solid #08869e;
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox:checked::before {
+    transform: scale(1);
+    transition: 0.3s all ease-in-out;
+}
+
+.checkbox::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\2713';
+    font-size: 30px;
+    line-height: 15px;
+    text-align: center;
+    color: #08869e;
+    transform: scale(0);
+}
+
+.completed {
+    box-shadow: #272c2d 0px 1px 4px;
+    transform: scale(1);
+    transition: 0.3s all ease-in-out;
+}
+
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transform: scale(1);
+    transition: 0.3s all ease-in-out;
+}
+
+.incomplete {
+    box-shadow: #08869e 0px 2px 4px;
+
+}
+
+.delete:hover {
+    color: rgb(170, 33, 33);
+    font-size: medium;
+    padding: 7px;
+    transition: 0.3s all ease-in-out;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.filter-section button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #056679;
+    color: #08869e;
+    cursor: pointer;
+}
+
+.filter-section button:hover {
+    border: 1px solid #08869e;
+}
