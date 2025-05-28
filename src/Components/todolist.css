@@ -141,13 +141,13 @@ ul li span {
 }
 
 .completed {
+    text-decoration: line-through;
     box-shadow: #272c2d 0px 1px 4px;
     transform: scale(1);
     transition: 0.3s all ease-in-out;
 }
 
 .completed span {
-    text-decoration: line-through;
     opacity: 0.6;
     transform: scale(1);
     transition: 0.3s all ease-in-out;
