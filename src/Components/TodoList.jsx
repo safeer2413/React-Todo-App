@@ -70,7 +70,7 @@ function TodoList({ items, setItems, goToView, setSelectedItem,
                                 checked={item?.status}
                                 onChange={() => changeStatus(item.id)}
                             />
-                            <span>{item?.items}</span>
+                            <p>{item?.items}</p>
                         </li>
 
                         <div className='btn-group'>
