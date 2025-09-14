@@ -159,7 +159,7 @@ ul li span {
 }
 
 .delete:hover {
-    color: rgb(170, 33, 33);
+    color: rgb(33, 170, 51);
     font-size: medium;
     padding: 7px;
     transition: 0.3s all ease-in-out;
